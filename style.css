@@ -235,7 +235,7 @@ h2::after {
 }
 
 .contact-info {
-  display: column;
+  display: row;
   justify-content: center;
   gap: 2rem;
   margin-top: 3rem;
@@ -418,7 +418,7 @@ footer {
   }
 
   .contact-info {
-    display: flex;
+    display: column;
     justify-content: center;
     gap: 1rem;
   }
