@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tan Jit Sheng - Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="floating-shapes">
+    <div class="shape"></div>
+    <div class="shape"></div>
+    <div class="shape"></div>
+  </div>
+
+  <header>
+    <img src="pixnova-607aa1cfc84f49824c7bc6a25d3a1ba3.jpg" alt="Hero Image" id="hero-image">
+    <div class="header-content">
+      <h1>Tan Jit Sheng</h1>
+      <p class="subtitle">Developer • Problem Solver • Tech Enthusiast</p>
+      <nav>
+        <a href="#about">About Me</a>
+        <a href="#education">Education</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-image">
+          <div class="profile-placeholder">TJS</div>
+        </div>
+        <div class="about-text">
+          <p>Hi, Nice To Meet You! I'm Tan Jit Sheng, a passionate developer with experience in web development, Internet-of-Things and problem solving. I enjoy building projects that make an impact and learning new technologies.</p>
+          
+          <p>I'm always excited to work on innovative solutions and collaborate with like-minded individuals who share a passion for technology and creating meaningful digital experiences.</p>
+          
+          <div class="skills">
+            <span class="skill-tag">Web Development</span>
+            <span class="skill-tag">IoT Solutions</span>
+            <span class="skill-tag">Problem Solving</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">React</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="education-timeline">
+        <div class="education-item">
+          <div class="education-year">Current</div>
+          <div class="education-content">
+            <div class="education-info">
+              <h3>Bachelor of Computer Engineering with Honours</h3>
+              <p class="institution">Universiti Teknikal Malaysia Melaka</p>
+              <p class="description">Currently pursuing a comprehensive degree program focusing on computer systems, software engineering, and digital technologies.</p>
+            </div>
+            <div class="education-image">
+              <img src="utem-logo1.png" alt="University Campus" class="edu-photo">
+            </div>
+          </div>
+        </div>
+        
+        <div class="education-item">
+          <div class="education-year">2023</div>
+          <div class="education-content">
+            <div class="education-info">
+              <h3>Diploma in Electronic Engineering</h3>
+              <p class="institution">Universiti Teknikal Malaysia Melaka</p>
+              <p class="description">Completed diploma program with focus on electronic systems, circuit design, and embedded technologies.</p>
+            </div>
+            <div class="education-image">
+              <img src="utem-logo1.png" alt="College Campus" class="edu-photo">
+            </div>
+          </div>
+        </div>
+        
+        <div class="education-item">
+          <div class="education-year">2019</div>
+          <div class="education-content">
+            <div class="education-info">
+              <h3 style="font-size: large;">SPM (Malaysian Certificate of Education)</h3>
+              <p class="institution">SMK CHIO MIN</p>
+              <p class="description">Successfully completed Malaysian Certificate of Education with strong foundation in mathematics and sciences.</p>
+            </div>
+            <div class="education-image">
+              <img src="chiomin.jpg" alt="Secondary School" class="edu-photo">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <h3>Smart IoT Dashboard</h3>
+          <p>A comprehensive Internet-of-Things dashboard that monitors and controls smart devices in real-time. Built with modern web technologies and integrated with various IoT protocols for seamless device communication.</p>
+          <a href="https://github.com/yourusername/iot-dashboard" target="_blank">View on GitHub</a>
+        </div>
+        
+        <div class="project">
+          <h3>Web Application Suite</h3>
+          <p>A full-stack web application featuring responsive design, user authentication, and real-time data processing. Demonstrates proficiency in both frontend and backend development with modern frameworks.</p>
+          <a href="https://github.com/yourusername/web-app-suite" target="_blank">View on GitHub</a>
+        </div>
+        
+        <div class="project">
+          <h3>Algorithm Optimization Tool</h3>
+          <p>An innovative problem-solving tool that optimizes complex algorithms for better performance. Features interactive visualizations and benchmarking capabilities to analyze algorithmic efficiency.</p>
+          <a href="https://github.com/yourusername/algo-optimizer" target="_blank">View on GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="contact-content">
+        <p>If you want to get in touch, feel free to reach out through any of these channels. I'm always open to discussing new opportunities, collaborating on interesting projects, or just having a conversation about technology!</p>
+        
+        <div class="contact-info">
+          <div class="contact-item">
+            <h4>Email</h4>
+            <a href="mailto:jitsheng2456@gmail.com">jitsheng2456@gmail.com</a>
+          </div>
+          
+          <div class="contact-item">
+            <h4>Phone</h4>
+            <a href="tel:+60149964229">+60 14-996 4229</a>
+          </div>
+          
+          <div class="contact-item">
+            <h4>GitHub</h4>
+            <a href="https://github.com/jitsheng1007" target="_blank">github.com/jitsheng1007</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Tan Jit Sheng. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Add smooth scrolling for navigation links
+    document.querySelectorAll('nav a').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        targetSection.scrollIntoView({
+          behavior: 'smooth',
+          block: 'start'
+        });
+      });
+    });
+
+    // Add scroll-triggered animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -100px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    }, observerOptions);
+
+    // Observe all sections
+    document.querySelectorAll('section').forEach(section => {
+      section.style.opacity = '0';
+      section.style.transform = 'translateY(30px)';
+      section.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
